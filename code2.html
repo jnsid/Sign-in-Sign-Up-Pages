@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            background-image: url('bck.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .signin-container {
+            width: 90%; /* Use percentage for responsiveness */
+            max-width: 350px; /* Limit maximum width */
+            height: 90vh; /* Use viewport height for full screen on phone */
+            padding: 20px; /* Reduce padding */
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-color: #ffd700;
+            border-radius: 8px;
+            margin: 0 auto 20px;
+            background-image: url('logo.jpg');
+            background-size: cover;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 15px; /* Reduce margin */
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .input-group input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .signin-button {
+            background-color: #ffd700;
+            color: #333;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .signin-button:hover {
+            background-color: #ffeb3b;
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #0078d4;
+            text-decoration: none;
+            display: block;
+            text-align: right;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="signin-container">
+        <div class="logo"></div>
+        <h2>Sign In</h2>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
+        <button class="signin-button">Sign In</button>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+    </div>
+</body>
+</html>
